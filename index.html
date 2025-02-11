@@ -1,255 +1,97 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Portfolio" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/fa62c117c7.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="styles.css" />
-    <title>MONTU AI</title>
-  </head>
-  <body class="light" id="top">
-    <header class="header center">
-      <h3>
-        <a href="https://rjshkhr.github.io/cleanfolio-minimal" class="link"
-          >RS.</a
-        >
-      </h3>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MONTU AI - ASSISTEN PINTER</title>
+    <!-- Mengimpor font dari Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Orbitron', sans-serif;
+            background: url('https://tse2.mm.bing.net/th?id=OIP.1FrIAPb-Oz8aRo4UVD7IzAHaJ5&w=474&h=474&c=7') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.8);
+            background-blend-mode: overlay;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
+        a {
+            color: #00aaff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .chat-icon {
+            font-size: 2em;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>MONTU AI - ASSISTEN PINTER</h1>
+    <p>Klik ikon <span class="chat-icon">💬</span> di pojok kanan bawah untuk memulai obrolan dengan MONTU AI.</p>
+    <p>Atau, mau coba MONTU AI di WhatsApp? <a href="https://wa.me/+6283173708580?text=halo+montu+ai" target="_blank">Klik di sini</a></p>
 
-      <nav class="nav center">
-        <ul class="nav__list center">
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#projects">Projects</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#skills">Skills</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#contact">Contact</a>
-          </li>
-        </ul>
-
-        <button type="button" aria-label="toggle theme" class="btn btn--icon">
-          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
-        </button>
-
-        <button
-          type="button"
-          aria-label="toggle navigation"
-          class="btn btn--icon nav__hamburger"
-        >
-          <i aria-hidden="true" class="fas fa-bars"></i>
-        </button>
-      </nav>
-    </header>
-
-    <main>
-      <!-- About -->
-      <div class="about center">
-        <h1>Hi, I am <span class="about__name">MONTUU-AI.</span></h1>
-        <h2 class="about__role">A Front end Developer.</h2>
-        <p class="about__desc">
-          *Halo! Selamat datang di MONTU AI* 🌟
-
-MONTU AI hadir untuk membantu Anda menyelesaikan berbagai tugas, baik itu tugas sekolah, tugas sehari-hari, dan banyak lagi! Dengan teknologi AI canggih, MONTU AI siap menjawab semua pertanyaan Anda dengan cepat dan akurat.
-
-*Apa yang bisa MONTU AI lakukan untuk Anda?*
-- 📝 *Membuat Tugas Sekolah* : Dari esai hingga presentasi, biarkan MONTU AI membantu Anda menyelesaikan tugas dengan mudah.
-- 📆 *Mengatur Jadwal* : Atur jadwal harian Anda dan buat pengingat untuk menjaga semuanya tetap teratur.
-- 💬 *Menjawab Pertanyaan* : Dapatkan jawaban instan untuk pertanyaan apa pun, dari pengetahuan umum hingga informasi spesifik.
-- 🔍 *Memberikan Rekomendasi* : Butuh saran atau rekomendasi? MONTU AI siap memberikan pilihan terbaik.
-
-Nikmati kemudahan dan kenyamanan dengan MONTU AI! 🚀
-        </p>
-
-        <div class="about__contact center">
-          <a href="https://example.com">
-            <span class="btn btn--outline">Resume</span>
-          </a>
-
-          <a
-            href="https://github.com/Montu"
-            aria-label="github"
-            class="link link--icon"
-          >
-            <i aria-hidden="true" class="fab fa-github"></i>
-          </a>
-
-          <a
-            href="https://linkedin.com/in/rjshkmontuhr"
-            aria-label="linkedin"
-            class="link link--icon"
-          >
-            <i aria-hidden="true" class="fab fa-linkedin"></i>
-          </a>
-        </div>
-      </div>
-
-      <!-- Projects -->
-      <section id="projects" class="section projects">
-        <h2 class="section__title">Projects</h2>
-
-        <div class="projects__grid">
-          <div class="project">
-            <h3>MONTU AI FITUR</h3>
-            <p class="project__description">
-              1. *Membuat Tugas Sekolah* : Membantu Anda menyelesaikan esai, presentasi, dan tugas lainnya dengan mudah dan cepat.
-2. *Pengingat dan Jadwal* : Mengatur jadwal harian Anda dan memberikan pengingat untuk menjaga semuanya tetap teratur.
-3. *Jawaban Cepat* : Menjawab pertanyaan Anda dengan informasi yang akurat dan relevan, dari pengetahuan umum hingga topik spesifik.
-4. *Rekomendasi* : Memberikan saran dan rekomendasi terbaik untuk berbagai kebutuhan Anda.
-5. *Percakapan Menyenangkan* : Menyediakan obrolan yang seru dan informatif kapan saja.
-6. *Bantuan Tugas Harian* : Membantu Anda dalam mengatur dan menyelesaikan tugas-tugas sehari-hari.
-7. *Akses Prioritas (Premium)* : Dapatkan respon lebih cepat dan layanan prioritas dengan akses premium.
-
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">SASS</li>
-              <li class="project__stack-item">TypeScript</li>
-              <li class="project__stack-item">React</li>
-            </ul>
-
-            <a
-              href="https://wa.me/+6283173708580?text=halo+montu+ai"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            <a
-              href="https://wa.me/+6283173708580?text=halo+montu+ai"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a>
-          </div>
-
-          <div class="project">
-            <h3>TENTANG MONTU AI</h3>
-            <p class="project__description">
-              
-*Keunggulan MONTU AI:*
-- *Membantu Tugas Sekolah* : Dari esai hingga presentasi, MONTU AI dapat membantu Anda menyelesaikan berbagai tugas sekolah dengan mudah dan cepat.
-- *Pengelola Jadwal* : Mengatur jadwal harian Anda dan memberikan pengingat agar Anda tidak melewatkan janji penting.
-- *Menjawab Pertanyaan* : Dapatkan jawaban instan untuk berbagai pertanyaan, dari pengetahuan umum hingga topik spesifik.
-- *Memberikan Rekomendasi* : MONTU AI siap memberikan saran dan rekomendasi terbaik untuk berbagai kebutuhan Anda.
-- *Obrolan Menyenangkan* : Nikmati percakapan yang seru dan informatif kapan saja.
-- *Bantuan Tugas Harian* : Membantu Anda mengatur dan menyelesaikan tugas-tugas sehari-hari.
-
-*Manfaat Premium di MONTU AI:*
-- *Akses Prioritas* : Dapatkan respon lebih cepat dan prioritas tertinggi dalam layanan.
-- *Fitur Tambahan* : Nikmati berbagai fitur tambahan yang tidak tersedia di versi reguler.
-- *Personalisasi Lebih Lanjut* : Sesuaikan pengalaman Anda dengan berbagai opsi personalisasi.
-- *Dukungan 24/7* : Akses dukungan pelanggan kapan saja Anda membutuhkannya.
-- *Konten Eksklusif* : Dapatkan akses ke konten eksklusif dan saran terbaik dari MONTU AI
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">SASS</li>
-              <li class="project__stack-item">TypeScript</li>
-              <li class="project__stack-item">React</li>
-            </ul>
-
-            <a
-              href="https://wa.me/+6283173708580?text=halo+montu+ai"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            <a
-              href="https://wa.me/+6283173708580?text=halo+montu+ai"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a>
-          </div>
-
-          <div class="project">
-            <h3>INFO</h3>
-            <p class="project__description">
-              MONTU AI adalah karya inovatif dari tim berbakat yang berasal dari Bali, dengan salah satu anggota utamanya bernama Gede Arta. Tim ini berdedikasi untuk menciptakan teknologi AI yang canggih dan bermanfaat bagi pengguna sehari-hari. Dengan latar belakang yang kuat dalam teknologi dan komitmen untuk memberikan layanan terbaik, Gede Arta dan timnya berhasil mengembangkan MONTU AI sebagai asisten AI yang dapat diandalkan dan multifungsi.
-
-
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">SASS</li>
-              <li class="project__stack-item">TypeScript</li>
-              <li class="project__stack-item">React</li>
-            </ul>
-
-            <a
-              href="https://wa.me/+6283173708580?text=halo+montu+ai"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            <a
-              href="https://wa.me/+6283173708580?text=halo+montu+ai"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- Skills -->
-      <section class="section skills" id="skills">
-        <h2 class="section__title">Skills</h2>
-        <ul class="skills__list">
-          <li class="skills__list-item btn btn--plain">HTML</li>
-          <li class="skills__list-item btn btn--plain">CSS</li>
-          <li class="skills__list-item btn btn--plain">SCSS</li>
-          <li class="skills__list-item btn btn--plain">JavaScript</li>
-          <li class="skills__list-item btn btn--plain">TypeScript</li>
-          <li class="skills__list-item btn btn--plain">React</li>
-          <li class="skills__list-item btn btn--plain">Redux</li>
-          <li class="skills__list-item btn btn--plain">Git</li>
-          <li class="skills__list-item btn btn--plain">Material UI</li>
-          <li class="skills__list-item btn btn--plain">Jest</li>
-          <li class="skills__list-item btn btn--plain">Enzyme</li>
-          <li class="skills__list-item btn btn--plain">CI/CD</li>
-        </ul>
-      </section>
-
-      <!-- Contact -->
-      <section class="section contact center" id="contact">
-        <h2 class="section__title">Contact</h2>
-        <a href="mailto:MontuAI.official@gmail.com">
-          <span class="btn btn--outline">Email me</span>
-        </a>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <a
-        href="https://github.com/rjshkhr/cleanfolio-minimal"
-        class="link footer__link"
-      >
-        Created By MONTU AI
-      </a>
-    </footer>
-
-    <div class="scroll-container">
-      <div class="scroll-top">
-        <a aria-label="Scroll up" href="#top">
-          <i aria-hidden="true" class="fas fa-arrow-up"></i>
-        </a>
-      </div>
-    </div>
-
-    <script src="./script.js"></script>
-  </body>
+    <!-- Widget Obrolan -->
+    <script>
+        window.CHAT_WIDGET_CONFIG = {
+            serverUrl: 'https://jangailabs.com:5001',
+            assistantId: 'e7d08195-2e03-4574-8e4f-b71b050601a3',
+            position: 'right-bottom',
+            theme: 'dark',
+            primaryColor: '#007bff',
+            icon: 'comment',
+            headerText: 'MONTU AI',
+            size: 'large',
+            userId: '67aae2974e3c031418687464',
+            proactiveEnabled: false,
+            proactiveMessage: `
+                ---
+                _Halo! Selamat datang di MONTU AI_ 🌟
+                MONTU AI hadir untuk membantu Anda menyelesaikan berbagai tugas, baik itu tugas sekolah, tugas sehari-hari, dan banyak lagi! Dengan teknologi AI canggih, MONTU AI siap menjawab semua pertanyaan Anda dengan cepat dan akurat.
+                _Apa yang bisa MONTU AI lakukan untuk Anda?_
+                - 📝 _Membuat Tugas Sekolah_ : Dari esai hingga presentasi, biarkan MONTU AI membantu Anda menyelesaikan tugas dengan mudah.
+                - 📆 _Mengatur Jadwal_ : Atur jadwal harian Anda dan buat pengingat untuk menjaga semuanya tetap teratur.
+                - 💬 _Menjawab Pertanyaan_ : Dapatkan jawaban instan untuk pertanyaan apa pun, dari pengetahuan umum hingga informasi spesifik.
+                - 🔍 _Memberikan Rekomendasi_ : Butuh saran atau rekomendasi? MONTU AI siap memberikan pilihan terbaik.
+                Nikmati kemudahan dan kenyamanan dengan MONTU AI! 🚀
+                ---
+            `,
+            proactiveDelay: 5
+        };
+    </script>
+    <script src="https://jangailabs.com:5001/widget/chat-widget.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initWidget);
+        } else {
+            initWidget();
+        }
+        function initWidget() {
+            if (window.chatWidgetInstance) return console.warn('Widget obrolan sudah diinisialisasi');
+            window.chatWidgetInstance = new ChatWidget(
+                window.CHAT_WIDGET_CONFIG.assistantId,
+                window.CHAT_WIDGET_CONFIG
+            );
+        }
+    </script>
+</body>
 </html>
